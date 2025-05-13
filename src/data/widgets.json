@@ -1,0 +1,9 @@
+{
+  "widgets": [
+    { "id": 1, "name": "Widget One - Quick brown fox" },
+    { "id": 2, "name": "Widget Two - Lazy dog jumps" },
+    { "id": 3, "name": "Widget Three - Bright sunny day" },
+    { "id": 4, "name": "Widget Four - Fresh morning breeze" },
+    { "id": 5, "name": "Widget Five - Happy little clouds" }
+  ]
+}
