@@ -3,13 +3,7 @@ import { Observable } from 'rxjs';
 import { getApiService } from '../apis';
 import './template.css';
 
-
 export function renderTemplate(data: Widget): string {
-    console.log('dom is ready', data);
-    // const widthClass = data.size?.width ? 
-    //     (data.size.width > 700 ? 'wide' : 
-    //      data.size.width < 500 ? 'narrow' : '') : '';
-
     return `
         <div class="block">
             <div class="block-content">

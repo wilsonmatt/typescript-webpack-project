@@ -31,7 +31,6 @@ class WidgetApiService {
       );
     }
 
-
     // Mock a GET request to fetch a widget from JSON data
     getWidgetsFromJson(): Observable<Widget[]> {
         // Import JSON data
@@ -51,8 +50,6 @@ export function capitalize(str: string): string {
 export function formatMessage(name: string): string {
     return `Welcome, ${capitalize(name)}!`;
 }
-
-console.log('Fetching widget...');
 
 export function initializeWidgetData(): void {
     getApiService().getWidget(1).subscribe({
