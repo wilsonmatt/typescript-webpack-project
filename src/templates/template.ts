@@ -67,3 +67,23 @@ export function renderAllWidgetsV2(widgets: Widget[]): string {
 
     return html;
 }
+
+
+export function renderAllWidgetsV3(widgets: Widget[]): string {
+    const html = `
+        <div class="widgets-scrollable-container">
+            ${widgets.map(widget => `
+                <div class="block">
+                    <div class="block-content">
+                        <h3>${widget.name}</h3>
+                        <p>${widget.description}</p>
+                    </div>
+                </div>
+            `).join('')}
+        </div>
+    `;
+
+    return html;
+}
+
+

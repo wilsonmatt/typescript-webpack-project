@@ -4,6 +4,26 @@
     { "id": 2, "name": "Widget Two - Lazy dog jumps" },
     { "id": 3, "name": "Widget Three - Bright sunny day" },
     { "id": 4, "name": "Widget Four - Fresh morning breeze" },
-    { "id": 5, "name": "Widget Five - Happy little clouds" }
+    { "id": 5, "name": "Widget Five - Happy little clouds" },
+    { "id": 6, "name": "Widget Six - Gentle river flows" },
+    { "id": 7, "name": "Widget Seven - Mountain peaks rise" },
+    { "id": 8, "name": "Widget Eight - Ocean waves crash" },
+    { "id": 9, "name": "Widget Nine - Desert sands shift" },
+    { "id": 10, "name": "Widget Ten - Forest leaves rustle" },
+    { "id": 11, "name": "Widget Eleven - City lights twinkle" },
+    { "id": 12, "name": "Widget Twelve - Thunder rolls deep" },
+    { "id": 13, "name": "Widget Thirteen - Rainbow arcs high" },
+    { "id": 14, "name": "Widget Fourteen - Stars shine bright" },
+    { "id": 15, "name": "Widget Fifteen - Snow falls soft" },
+    { "id": 16, "name": "Widget Sixteen - Wind whispers low" },
+    { "id": 17, "name": "Widget Seventeen - Rain drums steady" },
+    { "id": 18, "name": "Widget Eighteen - Birds soar free" },
+    { "id": 19, "name": "Widget Nineteen - Flowers bloom wide" },
+    { "id": 20, "name": "Widget Twenty - Grass sways green" },
+    { "id": 21, "name": "Widget Twenty-One - Moon glows pale" },
+    { "id": 22, "name": "Widget Twenty-Two - Sun sets gold" },
+    { "id": 23, "name": "Widget Twenty-Three - Clouds drift by" },
+    { "id": 24, "name": "Widget Twenty-Four - Lake reflects clear" },
+    { "id": 25, "name": "Widget Twenty-Five - Fields stretch far" }
   ]
 }

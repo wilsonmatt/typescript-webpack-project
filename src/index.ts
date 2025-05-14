@@ -1,7 +1,11 @@
+import './styles/global.css';
+import './styles/core.css';
 import { formatMessage, initializeWidgetData } from './apis';
 import { Widget } from './interfaces';
 import { renderTemplate, renderAllWidgets, renderAllWidgetsV2 } from './templates/template';
 import { StickyNote } from './components/StickyNote';
+import { Menu } from './components/Menu';
+import { TestElement } from './components/TestElement';
 
 function greet(name: string): string {
     return formatMessage(name);
@@ -10,6 +14,9 @@ function greet(name: string): string {
 // Mount the application
 const root = document.getElementById('root');
 if (root) {
+   
+    const testElement = new TestElement();
+
     initializeWidgetData();
     const widgets = JSON.parse(localStorage.getItem('widgets') || '[]');
     const widgetHtml = renderAllWidgetsV2(widgets);
@@ -20,4 +27,7 @@ if (root) {
         position: 'fixed',
         content: 'Welcome to the application!'
     });
+
+    // Create menu instance
+    const menu = new Menu();
 } 

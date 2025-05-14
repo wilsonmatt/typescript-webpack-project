@@ -30,7 +30,7 @@ export class StickyNote {
                 bottom: 20px;
                 right: 20px;
                 width: 200px;
-                background-color: #ffeb3b;
+                background-color: #f5f5f5;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
                 border-radius: 0;
                 padding: 10px;
