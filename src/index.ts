@@ -15,7 +15,7 @@ function greet(name: string): string {
 const root = document.getElementById('root');
 if (root) {
    
-    const testElement = new TestElement();
+    // const testElement = new TestElement();
 
     initializeWidgetData();
     const widgets = JSON.parse(localStorage.getItem('widgets') || '[]');
