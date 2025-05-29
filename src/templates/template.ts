@@ -20,7 +20,31 @@ export function renderAllWidgets(widgets: Widget[]): string {
         </div>
     `;
 }
+function checkBlockVisibility() {
+    const aBlock = document.querySelector('.block > .block-content');
+    if(aBlock) {
+        const rect = aBlock.getBoundingClientRect();
+        const isVisible = (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.intersectionRatio === 1) {
+                    requestAnimationFrame(() => {
+                        console.log('a block visible and painted', aBlock);
+                    });
+                }
+            });
+        }, {
+            threshold: 1.0 // Only trigger when 100% visible
+        });
+    }
+    console.log('aBlock visible and painted');
 
+}
 function checkLastBlockVisibility() {
     const lastBlock = document.querySelector('.block:last-child > .block-content');
     if (lastBlock) {
@@ -62,6 +86,9 @@ export function renderAllWidgetsV2(widgets: Widget[]): string {
         if (document.querySelector('.block:last-child')) {
             window.addEventListener('scroll', checkLastBlockVisibility);
             window.addEventListener('resize', checkLastBlockVisibility);
+        }
+        if (document.querySelector('.block')) {
+            window.addEventListener('scroll', checkBlockVisibility);
         }
     }, 0);
 
